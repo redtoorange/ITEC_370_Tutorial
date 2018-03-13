@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://dodge_tutorial/HUD.gd" type="Script" id=1]
 [ext_resource path="res://fonts/new_dynamicfont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://new_theme.tres" type="Theme" id=3]
 
 [node name="HUD" type="CanvasLayer" index="0"]
 
@@ -62,8 +63,8 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -90.0
-margin_top = -42.0
-margin_right = 90.0
+margin_top = -64.0
+margin_right = 81.0
 margin_bottom = 42.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -72,6 +73,7 @@ mouse_filter = 0
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
+theme = ExtResource( 3 )
 custom_fonts/font = ExtResource( 2 )
 toggle_mode = false
 enabled_focus_mode = 2
@@ -80,7 +82,7 @@ group = null
 text = "Start"
 flat = false
 align = 1
-_sections_unfolded = [ "Margin", "Visibility", "custom_fonts" ]
+_sections_unfolded = [ "Margin", "Theme", "Visibility", "custom_fonts" ]
 
 [node name="MessageTimer" type="Timer" parent="." index="3"]
 

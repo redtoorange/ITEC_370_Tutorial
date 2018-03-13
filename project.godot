@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="Tutorial"
-run/main_scene="res://dodge_tutorial/Main.tscn"
+run/main_scene="res://JavaScript/Control.tscn"
 config/icon="res://icon.png"
 
 [compression]

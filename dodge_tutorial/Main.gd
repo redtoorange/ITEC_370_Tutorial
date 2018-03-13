@@ -5,6 +5,8 @@ var score
 
 func _ready():
 	randomize()
+	if OS.get_name() == "HTML5":
+		OS.set_window_maximized(true)
 
 
 func game_over():
